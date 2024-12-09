@@ -10,10 +10,49 @@
 
 <body>
     <main>
+        <div class="overlay"></div>
+        <div class="menu-open">
+            <div class="round-wrapper">
+                <span class="round">J</span>
+                <h2>Java</h2>
+            </div>
+            <div class="menu-wrapper">
+                <div class="menu-items">
+                    <img src="./images/svg/user.svg" alt="">
+                    <span>My profile</span>
+                </div>
+
+                <div class="menu-items">
+                    <img src="./images/svg/group.svg" alt="">
+                    <span>Create group</span>
+                </div>
+
+                <div class="menu-items">
+                    <img src="./images/svg/contact.svg" alt="">
+                    <span>Contact</span>
+                </div>
+
+                <div class="menu-items">
+                    <img src="./images/svg/saved.svg" alt="">
+                    <span>Saved</span>
+                </div>
+                
+                <div class="menu-items">
+                    <img src="./images/svg/calls.svg" alt="">
+                    <span>Calls</span>
+                </div>
+
+                <div class="menu-items">
+                    <img src="./images/svg/settings.svg" alt="">
+                    <span>Настройка</span> 
+                </div>
+            </div>
+        </div>
+
         <div class="main-wrapper">
             <div class="chat">
                 <div class="chat-top">
-                    <button style="width: 26px; border: none; background: none;">
+                    <button id="open-menu" style="width: 26px; border: none; background: none;">
                         <?xml version="1.0" ?><svg fill="#fff" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                             <defs>
                                 <style>
@@ -200,6 +239,8 @@
             </div>
         </div>
     </main>
+
+    <script src="./app.js"></script>
 </body>
 
 </html>
