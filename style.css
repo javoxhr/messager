@@ -2,6 +2,7 @@
 
 :root {
     --brand-color: rgba(0, 132, 255, 0.73);
+    --info-color: rgba(8, 113, 211, 0.73);
 }
 
 * {
@@ -227,6 +228,49 @@ body {
     right: 0;
 }
 
+#back-in-settings {
+    img {
+        width: 35px !important;
+    }
+}
+
+.id-profil {
+    font-size: 12px;
+}
+
+.plus-img-wrapper {
+    position: absolute;
+    right: 20px;
+    top: 139px;
+    input {
+        display: none;
+    }
+}
+
+.camera-white-round {
+    width:  60px;
+    height: 60px;
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 2px 0px #a5a5a5;
+    img {
+        width: 40px;
+    }
+}
+
+.profil-bottom-items {
+    padding: 15px 22px;
+}
+
+.profil-bottom-items h2 {
+    font-size: 16px;
+    color: var(--brand-color);
+    letter-spacing: 1px;
+}
+
 .settings-wrapper {
     background: var(--brand-color);
     padding: 14px 15px;
@@ -282,4 +326,49 @@ body {
     padding: 5px;
     background: #e4e2e2;
     display: block;
+}
+
+.my-profil {
+ width: 100%;
+ height: 100%;
+ background: #fff;
+ position: fixed;
+ top: 0;
+ left: 0;
+ z-index: 2;
+}
+
+.my-profil-wrapper {
+    background: var(--brand-color);
+    padding: 14px 15px;
+}
+
+
+.profil-items-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.profil-bottom-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+
+.profil-bottom-item a {
+    color: var(--brand-color);
+}
+
+.tel {
+    font-weight: 400;
+    font-size: 13px;
+    color: #a7a7a7;
+}
+
+.user-line {
+    width: 100%;
+    height: 1px;
+    background: #c9c9c9;
 }

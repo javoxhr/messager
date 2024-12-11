@@ -25,11 +25,13 @@ settingsBtn.addEventListener('click', ()=> {
     settings.classList.add('active-settings')
 })
 
-const backInSettings = document.querySelector('#back-in-settings')
+const backInSettings = document.querySelectorAll('#back-in-settings')
 
 
-backInSettings.addEventListener('click', ()=> {
-    settings.classList.remove('active-settings')
-    menuOpen.classList.add('menu-open-active')
-    menuOverlay.classList.add('menu-overlay-active')
+backInSettings.forEach((el)=> {
+    el.addEventListener('click', ()=> {
+        settings.classList.remove('active-settings')
+        menuOpen.classList.add('menu-open-active')
+        menuOverlay.classList.add('menu-overlay-active')
+    })
 })
