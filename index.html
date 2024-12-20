@@ -18,10 +18,10 @@
             <div class="my-profil-wrapper">
                 <div class="profil-settings"></div>
                 <div class="settings-header">
-                    <button id="back-in-settings"><img src="./images/svg/back.svg" alt=""></button>
+                    <button id="back-in-prfolie"><img src="./images/svg/back.svg" alt=""></button>
                     <div class="chat-top-btns">
                         <button style="width: 20px;"><img src="./images/svg/edit.svg" alt=""></button>
-                        <button><img src="./images/svg/menu-icon.svg" alt=""></button>
+                        <button id="open-tri-toch-btn"><img src="./images/svg/menu-icon.svg" alt=""></button>
                     </div>
                 </div>
 
@@ -31,7 +31,8 @@
                         <div class="profil-round-wrapper">
                             <h2>Java</h2>
                             <div class="plus-img-wrapper">
-                                <label class="camera-white-round" for="file-profil"><img src="./images/svg/plus.svg" alt=""></label>
+                                <label class="camera-white-round" for="file-profil"><img src="./images/svg/plus.svg"
+                                        alt=""></label>
                                 <input id="file-profil" type="file">
                             </div>
                         </div>
@@ -40,19 +41,47 @@
                     </div>
                 </div>
             </div>
+
+
+            <div class="tri-toch-wrapper">
+                <div class="tri-toch-overlay"></div>
+                <div class="open-tri-toch">
+                    <div class="tri-toch-wrapper-btns">
+                        <button><img src="./images/svg/edit-black-icon.svg" alt="">Edit info</button>
+                        <button><img src="./images/svg/change-user-name.svg" alt="">change username</button>
+                        <button><img src="./images/svg/set-photo.svg" alt="">Set profile photo</button>
+                    </div>
+                </div>
+            </div>
+
+
             <div class="profil-bottom-items">
                 <h2>Information</h2>
                 <div class="profil-items-wrapper">
                     <div class="profil-bottom-item">
-                        <span class="tel-numeber">+998 90 633 07 18</span>
-                        <span class="tel">Number</span>
+                        <div class="tel-wrp">
+                            <span class="tel-numeber">+998 90 633 07 18</span>
+                            <span class="tel">Number</span>
+                        </div>
+                        <div class="profil-bottom-item dop-class-user-wrp">
+                            <span class="tel-numeber"><a href="#">@feldgram</a></span>
+                            <span class="tel">Username</span>
+                        </div>
                     </div>
 
                     <span class="user-line"></span>
 
-                    <div class="profil-bottom-item">
-                        <span class="tel-numeber"><a href="#">@feldgram</a></span>
-                        <span class="tel">Username</span>
+                    <div class="user-info-wrapper">
+
+                        <div class="dop-info-wrapper">
+                            <span>
+                                <h3>default</h3>bio
+                            </span>
+                            <span>
+                                <h3>default</h3> age
+                            </span>
+                            <span class="bio-line"></span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -138,7 +167,7 @@
                 <span class="tel-number">+998 33 971 30 90</span>
             </div>
             <div class="menu-wrapper">
-                <div class="menu-items">
+                <div class="menu-items" id="profil-btn">
                     <img src="./images/svg/user.svg" alt="">
                     <span>My profile</span>
                 </div>
@@ -201,18 +230,20 @@
                 </div>
 
                 <div class="users-items">
-                    <div class="user-item">
-                        <div class="user-item-wrapper">
-                            <img src="./images/png/user-1-img.png" alt="">
+                    <a href="./detail.html" style="color: #000;">
+                        <div class="user-item">
+                            <div class="user-item-wrapper">
+                                <img src="./images/png/user-1-img.png" alt="">
 
-                            <div class="user-item-text-wrapper">
-                                <h3>Fauziah</h3>
-                                <span>I will do the voice over</span>
+                                <div class="user-item-text-wrapper">
+                                    <h3>Fauziah</h3>
+                                    <span>I will do the voice over</span>
+                                </div>
+
+                                <span class="message-time">10:30 PM</span>
                             </div>
-
-                            <span class="message-time">10:30 PM</span>
                         </div>
-                    </div>
+                    </a>
 
                     <div class="user-item">
                         <div class="user-item-wrapper">

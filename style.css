@@ -99,7 +99,7 @@ body {
     height: 100%;
     background: #fff;
     z-index: 10;
-    transition: all .5s ease;
+    transition: all .3s ease;
 }
 
 .menu-open-active {
@@ -190,7 +190,7 @@ body {
     top: 0;
     right: -100%;
     z-index: 2;
-    transition: all .2s ease;
+    transition: all .3s ease;
 }
 
 .tel-number {
@@ -334,8 +334,13 @@ body {
  background: #fff;
  position: fixed;
  top: 0;
- left: 0;
+ transition: all .3s ease;
+ right: -100%;
  z-index: 2;
+}
+
+.active-my-profil {
+    right: 0;
 }
 
 .my-profil-wrapper {
@@ -371,4 +376,208 @@ body {
     width: 100%;
     height: 1px;
     background: #c9c9c9;
+}
+
+
+.tri-toch-wrapper {
+    position: relative;
+}
+
+.open-tri-toch .tri-toch-wrapper-btns {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.open-tri-toch .tri-toch-wrapper-btns button {
+    width: 170px;
+    border: none;
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    font-size: 16px;
+}
+
+.open-tri-toch .tri-toch-wrapper-btns button:active {
+    background: #c9c9c9;
+}
+
+.open-tri-toch .tri-toch-wrapper-btns button img {
+    width: 20px;
+}
+
+.tri-toch-overlay {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    display: none;
+}
+.open-tri-toch {
+    width: 200px;
+    border: 1px solid #c9c9c9;
+    padding: 10px;
+    background: #fff;
+    border-radius: 5px;
+    position: absolute;
+    top: -120px;
+    right: 20px;
+    z-index: 2;
+    display: none;
+}
+
+.tri-toch-active {
+    display: block;
+}
+
+.user-info-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.dop-info-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.dop-info-wrapper span {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    color: #919191;
+}
+
+.tel-wrp {
+    display: flex;
+    flex-direction: column;
+}
+
+.tel-wrp:active {
+    background: #c9c9c9;
+}
+
+.dop-info-wrapper span:active {
+    background: #c9c9c9;
+}
+
+.dop-info-wrapper span h3 {
+    color: #000;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.bio-line {
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #c9c9c9;
+}
+
+.dop-class-user-wrp {
+    padding: 10px 0;
+}
+
+
+
+
+
+/* detail html */
+
+.chat-detail-wrapper-header {
+    background: var(--brand-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.chat-detail-left-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.chat-detail-left-wrapper h2 {
+    color: #fff;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.chat-detail-rifht-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.chat-detail-rifht-wrapper button {
+    background: none;
+    border: none;
+}
+
+.messages-date {
+    text-align: center;
+    display: block;
+    margin-top: 20px;
+}
+
+.message {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 15px;
+    margin-top: 20px;
+    padding-right: 12px;
+}
+
+.message img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.message .message-timee {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.message-text {
+    padding: 10px;
+    background: var(--brand-color);
+    color: #fff;
+    font-size: 16px;
+    border-radius: 20px;
+}
+
+.message-he {
+    display: flex;
+    align-items: center;
+    padding-left: 12px;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.message-he img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.saidolim-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.message-he .message-text {
+    background: #8F8F8F;
 }
